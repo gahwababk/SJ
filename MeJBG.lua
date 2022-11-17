@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Jailbreak by Albara#9123", "Synapse")
+local Window = Library.CreateLib("JailbreakX by Albara#9123", "Synapse")
 
 ------------------------------- main
 local Main = Window:NewTab("Local")
@@ -242,8 +242,8 @@ end)
 --------------------
 
 
-local About = Window:NewTab("About 2022/11/10")
-local Version = About:NewSection("Version 2.0.2 Add small GUI")
+local About = Window:NewTab("About 2022/11/17")
+local Version = About:NewSection("Version 2.2.2 Add Remove Tomb dmg and Free upgrade Car")
 local Credit = About:NewSection("Made By Albara#9123")
 local Close = About:NewSection("Press G To Close The Gui")
 Close:NewKeybind("Close/Open UI", "Opens And Closes The Gui", Enum.KeyCode.G, function()
