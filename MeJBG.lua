@@ -217,7 +217,7 @@ ServerSection:NewLabel("Removes")
 ServerSection:NewButton("Tomb Spike & Darts", "Remove Tomb Spikes and Darts", function()
     local amount=100
 for i=1,amount do
-loadstring(game:HttpGet("https://github.com/gahwababk/SJ/edit/main/JBTombRe.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gahwababk/SJ/main/JBTombRe.lua"))()
 end
 end)
 ServerSection:NewButton("Museum.Doors", "Remove Museum.Doors", function()
