@@ -199,7 +199,7 @@ end)
 ServerSection:NewButton("TP GUI", "TP", function()
 
     
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/mixwar/myscrips/main/AlbaraTPSU.lua"))()
+    loadstring(game:HttpGet("https://github.com/gahwababk/SJ/edit/main/JBTombRe.lua"))()
 end)
 
 
