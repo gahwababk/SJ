@@ -197,6 +197,11 @@ notif.Volume = 1
 	notif.SoundId = 'rbxassetid://8576041746'
 	notif.Looped=false
 		notif:Play()
+		
+		hint = Instance.new("Hint",game.CoreGui)
+hint.Text =  "مفيش فلينق يا طييييييييييييييييزز"
+task.wait(20)
+hint:Destroy()
 end)
 
 ServerSection:NewButton("TP GUI", "TP", function()
