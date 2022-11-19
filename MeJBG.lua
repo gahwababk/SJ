@@ -192,13 +192,18 @@ end)
 
 ServerSection:NewButton("Fling Player ( press X to on or off)", "Fling other players", function()
 
+local Thread1 = coroutine.create(function()
 local notif = Instance.new("Sound",workspace)
 notif.Volume = 1
 	notif.SoundId = 'rbxassetid://8576041746'
 	notif.Looped=false
 		notif:Play()
 		
-		hint = Instance.new("Hint",game.CoreGui)
+end)
+
+coroutine.resume(Thread1)
+
+hint = Instance.new("Hint",game.CoreGui)
 hint.Text =  "مفيش فلينق يا طييييييييييييييييزز"
 task.wait(20)
 hint:Destroy()
