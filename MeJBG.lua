@@ -192,8 +192,11 @@ end)
 
 ServerSection:NewButton("Fling Player ( press X to on or off)", "Fling other players", function()
 
-    _G.KeyCode = "X"
-    loadstring(game:HttpGet("https://shattered-gang.lol/scripts/fe/touch_fling.lua"))()
+local notif = Instance.new("Sound",workspace)
+notif.Volume = 1
+	notif.SoundId = 'rbxassetid://8576041746'
+	notif.Looped=false
+		notif:Play()
 end)
 
 ServerSection:NewButton("TP GUI", "TP", function()
