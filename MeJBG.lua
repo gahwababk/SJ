@@ -32,7 +32,7 @@ end)
 MainSection:NewButton("GunGui", "Gui", function()
 
 
-for i = 1,200 do 
+for i = 1,300 do 
     game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(-395.341552734375, 19.985816955566406, -5722.14208984375))
         task.wait(0.01)
     end
