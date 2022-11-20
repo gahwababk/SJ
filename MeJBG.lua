@@ -32,7 +32,7 @@ end)
 MainSection:NewButton("GunGui", "Gui", function()
 
 
-for i = 1,450 do 
+for i = 1,300 do 
     game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(-395.341552734375, 19.985816955566406, -5722.14208984375))
         task.wait(0.01)
     end
@@ -201,24 +201,13 @@ ServerSection:NewButton("ESP", "ESP Players", function()
     pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() end)
 end)
 
-ServerSection:NewButton("Fling Player ( press X to on or off)", "Fling other players", function()
+--ServerSection:NewButton("Fling Player ( press X to on or off)", "Fling other players", function()
 
-local Thread1 = coroutine.create(function()
-local notif = Instance.new("Sound",workspace)
-notif.Volume = 1
-	notif.SoundId = 'rbxassetid://8576041746'
-	notif.Looped=false
-		notif:Play()
+
+--script
 		
-end)
+--end)
 
-coroutine.resume(Thread1)
-
-hint = Instance.new("Hint",game.CoreGui)
-hint.Text =  "مفيش فلينق يا طييييييييييييييييزز"
-task.wait(20)
-hint:Destroy()
-end)
 
 ServerSection:NewButton("TP GUI", "TP", function()
 
@@ -232,6 +221,72 @@ ServerSection:NewButton("ESP Airdrop", "ESP Airdrop", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/GiJvzt5b'))()
 end)
 
+ServerSection:NewLabel("TP")
+
+ServerSection:NewButton("MSM car", "ButtonInfo", function()
+    game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(1070.796142578125, 130.0579605102539, 1363.9810791015625))
+    task.wait(0.01)
+end)
+ServerSection:NewButton("BANK car", "ButtonInfo", function()
+    for i = 1,200 do 
+        game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(40.24939727783203, 20.032533645629883, 925.8862915039062))
+            task.wait(0.01)
+        end
+end)
+ServerSection:NewButton("CASINO car", "ButtonInfo", function()
+    
+    for i = 1,200 do 
+        game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(42.691322326660156, 71.45126342773438, -4737.38671875))
+    task.wait(0.01)
+        end
+        
+    
+end)
+
+ServerSection:NewButton("CASINO CASH car", "ButtonInfo", function()
+    
+ 
+
+for i = 1,200 do 
+    game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(336.19488525390625, -77.13932037353516, -4518.7197265625))
+        task.wait(0.01)
+    end
+    
+        
+    
+
+    
+end)
+ServerSection:NewButton("TOMB OUT", "ButtonInfo", function()
+
+    for i = 1,200 do 
+     game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(367.9652099609375, 22.229576110839844, 198.5996551513672))
+    task.wait(0.01)
+        end
+        
+
+end)
+ServerSection:NewButton("TOMB IN car", "ButtonInfo", function()
+    
+
+    for i = 1,200 do 
+        game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(526.1233520507812, -59.25383758544922, -386.2117614746094))
+    task.wait(0.01)
+        end
+        
+
+
+end)
+ServerSection:NewButton("airport Casino", "ButtonInfo", function()
+    
+
+    for i = 1,200 do 
+        game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(-803.9756469726562, 19.442981719970703, -5051.44970703125))
+            task.wait(0.01)
+        end
+        
+
+end)
 
 
 -------------
@@ -266,8 +321,8 @@ end)
 --------------------
 
 
-local About = Window:NewTab("About 2022/11/17")
-local Version = About:NewSection("Version 2.2.2 Add Remove Tomb dmg and Free upgrade Car")
+local About = Window:NewTab("About 2022/11/20")
+local Version = About:NewSection("Version 2.2.3 Add More TP")
 local Credit = About:NewSection("Made By Albara#9123")
 local Close = About:NewSection("Press G To Close The Gui")
 Close:NewKeybind("Close/Open UI", "Opens And Closes The Gui", Enum.KeyCode.G, function()
