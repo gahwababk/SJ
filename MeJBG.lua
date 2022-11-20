@@ -16,7 +16,7 @@ for _, ClickDetector in pairs(Bakery:GetDescendants()) do
 end;
 end)
 
-MainSection:NewButton("ShotGun Mod", "Shotgun Mod", function()
+MainSection:NewButton("Shotgun Mod", "Shotgun Mod", function()
     for i,v in pairs(getgc(true))do
         if type(v)=="table" and rawget(v,"Damage") then
         v.MagSize=math.huge
@@ -24,6 +24,19 @@ MainSection:NewButton("ShotGun Mod", "Shotgun Mod", function()
         v.BulletSpread=0.1
         v.FireAuto=true
         v.CamShakeMagnitude=0
+        
+    end
+ end
+end)
+
+MainSection:NewButton("GunGui", "Gui", function()
+
+
+for i = 1,200 do 
+    game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(-395.341552734375, 19.985816955566406, -5722.14208984375))
+        task.wait(0.01)
+    end
+    
         
     end
  end
