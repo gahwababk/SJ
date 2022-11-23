@@ -568,6 +568,7 @@ for i, e in pairs(l:GetChildren()) do
         e.Enabled = false
     end
 end
+		sethiddenprop(workspace.Terrain, "Decoration", false)
     --or wutever script u want here
 end)
 --------
