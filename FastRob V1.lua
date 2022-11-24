@@ -176,51 +176,7 @@ end
     end
     --[[ !!IMPORTANT!!: if you want to use some type of loop (example: while wait() do//Etc.) I DO NOT RECOMMEND putting it within this function because it will bug and break the toggle button. SOLUTION: Separate it from the function or the script and just put it on the very bottom of the script (i will give an example in the end of this "Guide" using the same examples) ]]--
 end)
-b:Toggle("سريع التقاط",function(bool) --ama use "autoQuest as an example//you will need  to  create a "local autoQuest = false" 
-    autoQuest= bool -- basically it will toggle the "local autoQuest" into true/false 
-    -- you can plug in a simple script right here (EXAMPLE:)
-    if autoQuest == true then
-        _G.toggle =  true     ------ true  = enable false = disable
-
-        while _G.toggle do
-           
-           wait (0.1)
-           
-                local Interface = require(game:GetService("ReplicatedStorage").Module.UI);
-        for i,a in next, Interface.CircleAction.Specs do
-           a.Timed = false
-        end;
-        
-        wait (0.1)
-        
-        end
-    else
-        _G.toggle =  false     ------ true  = enable false = disable
-
-        while _G.toggle do
-           
-           wait (0.1)
-           
-                local Interface = require(game:GetService("ReplicatedStorage").Module.UI);
-        for i,a in next, Interface.CircleAction.Specs do
-           a.Timed = false
-        end;
-        
-        wait (0.1)
-        
-        end
-        
-        wait (0.2)
-           
-                local Interface = require(game:GetService("ReplicatedStorage").Module.UI);
-        for i,a in next, Interface.CircleAction.Specs do
-           a.Timed = true
-        end;
-
-    end
-    
-    --[[ !!IMPORTANT!!: if you want to use some type of loop (example: while wait() do//Etc.) I DO NOT RECOMMEND putting it within this function because it will bug and break the toggle button. SOLUTION: Separate it from the function or the script and just put it on the very bottom of the script (i will give an example in the end of this "Guide" using the same examples) ]]--
-end)
+--------------------------
 --------------------------
 k:Button("الكازينو",function()
     local Thread1 = coroutine.create(function()
@@ -520,6 +476,11 @@ y:Button("البنك",function()
         game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(40.24939727783203, 20.032533645629883, 925.8862915039062))
             task.wait(0.01)
         end
+        for i,v in pairs(workspace.Banks:GetDescendants()) do
+            if v.Name:match("Lasers") then
+            v:Destroy()
+            end
+            end
     --or wutever script u want here
 end)
 y:Button("تومب",function()
@@ -527,6 +488,48 @@ y:Button("تومب",function()
         game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(545.3483276367188, 23.205795288085938, -547.72509765625))
             task.wait(0.01)
         end
+    --or wutever script u want here
+end)
+y:Button("No wait ON",function()
+    _G.toggle =  true     ------ true  = enable false = disable
+
+    while _G.toggle do
+       
+       wait (0.3)
+       
+            local Interface = require(game:GetService("ReplicatedStorage").Module.UI);
+    for i,a in next, Interface.CircleAction.Specs do
+       a.Timed = false
+    end;
+    
+    wait (0.3)
+    
+    end
+    --or wutever script u want here
+end)
+y:Button("No wait OFF",function()
+    _G.toggle =  false     ------ true  = enable false = disable
+
+    while _G.toggle do
+       
+       wait (0.3)
+       
+            local Interface = require(game:GetService("ReplicatedStorage").Module.UI);
+    for i,a in next, Interface.CircleAction.Specs do
+       a.Timed = false
+    end;
+    
+    wait (0.3)
+    
+    end
+    
+    wait (0.3)
+       
+            local Interface = require(game:GetService("ReplicatedStorage").Module.UI);
+    for i,a in next, Interface.CircleAction.Specs do
+       a.Timed = true
+    end;
+
     --or wutever script u want here
 end)
 ------
