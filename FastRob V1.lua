@@ -204,25 +204,26 @@ k:Button("الكازينو",function()
     --or wutever script u want here
 end)
 k:Button("المجوهرات",function()
-    Loop_Speed = 5 -- You can make this 0
-    local Thread1 = coroutine.create(function()
-        for i,v in pairs(workspace.Jewelrys:GetDescendants()) do
-        if v.Name:match("BarbedWire") then
-        v:Destroy()
-        end
-        end
-        end)
-        
-        coroutine.resume(Thread1)
-        
-        for i,v in pairs(workspace.Jewelrys:GetDescendants()) do
-        if v.Name:match("InnerModel") then
-        v:Destroy()
-end
-end
-        
-        
-    --or wutever script u want here
+    Loop_Speed = 5.0 -- You can make this 0
+    while wait(Loop_Speed) do
+        local Thread1 = coroutine.create(function()
+            for i,v in pairs(workspace.Jewelrys:GetDescendants()) do
+            if v.Name:match("BarbedWire") then
+            v:Destroy()
+            end
+            end
+            end)
+            
+            coroutine.resume(Thread1)
+            
+            for i,v in pairs(workspace.Jewelrys:GetDescendants()) do
+            if v.Name:match("InnerModel") then
+            v:Destroy()
+            end
+            end
+    end
+    
+      --or wutever script u want here
 end)
 k:Button("المتحف",function()
     game:GetService("Workspace").Museum.Lights:remove()
