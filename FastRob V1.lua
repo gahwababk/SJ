@@ -204,6 +204,7 @@ k:Button("الكازينو",function()
     --or wutever script u want here
 end)
 k:Button("المجوهرات",function()
+    Loop_Speed = 5 -- You can make this 0
     local Thread1 = coroutine.create(function()
         for i,v in pairs(workspace.Jewelrys:GetDescendants()) do
         if v.Name:match("BarbedWire") then
@@ -217,8 +218,8 @@ k:Button("المجوهرات",function()
         for i,v in pairs(workspace.Jewelrys:GetDescendants()) do
         if v.Name:match("InnerModel") then
         v:Destroy()
-        end
-        end
+end
+end
         
         
     --or wutever script u want here
@@ -408,11 +409,14 @@ k:Button("بلانت باور",function()
     --or wutever script u want here
 end)
 k:Button("البنك",function()
-    for i,v in pairs(workspace.Banks:GetDescendants()) do
-        if v.Name:match("Lasers") then
-        v:Destroy()
-        end
-        end
+    Loop_Speed = 5 -- You can make this 0
+    while wait(Loop_Speed) do
+        for i,v in pairs(workspace.Banks:GetDescendants()) do
+            if v.Name:match("Lasers") then
+            v:Destroy()
+            end
+            end
+    end
     --or wutever script u want here
 end)
 -------
