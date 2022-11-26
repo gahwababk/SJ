@@ -495,6 +495,22 @@ y:Button("تومب",function()
         end
     --or wutever script u want here
 end)
+y:Button("الخزنة",function()
+local Thread1 = coroutine.create(function()
+for i = 1,200 do -- غير ال 200 الى رقم اخر عدد مرات اللوب
+game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(601.1047973632812, 41.53847122192383, 1227.2225341796875))
+    task.wait(0.01)
+end
+end)
+
+coroutine.resume(Thread1)
+
+for i = 1,100 do -- غير ال 200 الى رقم اخر عدد مرات اللوب
+workspace.Apartment_Warehouse:FindFirstChild("Donut Vending Machine").GrabRemote:FireServer()
+    task.wait(0.01)
+end
+    --or wutever script u want here
+end)
 y:Button("No wait ON",function()
     _G.toggle =  true     ------ true  = enable false = disable
 
