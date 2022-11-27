@@ -476,6 +476,17 @@ y:Button("المجوهرات",function()
     end
     --or wutever script u want here
 end)
+y:Button("الشرطة مركز",function()
+    for i = 1,190 do -- غير ال 200 الى رقم اخر عدد مرات اللوب
+        game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(235.98590087890625, 18.933311462402344, 1179.4405517578125))
+            task.wait(0.01)
+        end
+        for i = 1,50 do -- غير ال 200 الى رقم اخر عدد مرات اللوب
+        game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(252.567459106453, 18.661991119384766, 1185.0828857421875))
+            task.wait(0.01)
+        end
+    --or wutever script u want here
+end)
 y:Button("البنك",function()
     for i = 1,200 do 
         game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(40.24939727783203, 20.032533645629883, 925.8862915039062))
